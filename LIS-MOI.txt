@@ -1,9 +1,0 @@
-VOUS AVEZ TELECHARGE CE FICHER POUR POUVOIR EXPLORER MON SITE WEB.
-
-Pour un meilleur fonctionnement du site, merci de "dézipper" ce dossier.
-Un raccourci existe pour accéder à la page d'accueil. Il prend la forme d'un lien à CLIQUER.
-
-ATTENTION : LES FICHERS DANS LE DOSSIER "donnees" SONT LE CONTENU DU SITE WEB : SI VOUS MODIFIEZ OU SUPPRIMEZ L'UN D'EUX, LE SITE WEB NE POURRAS PASFONCTIONNER CORRECTEMENT.
-(Mais vous pourrez re-télécharger la dernière version sur l'ENT en temps normal.)
-
-Si je reçois des mails ou des commentaires sur une erreur dans le site, j'essaierai la corriger et je mettrai à jour le FICHIER PARTAGÉ.
