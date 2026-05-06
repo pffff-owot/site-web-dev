@@ -1,0 +1,119 @@
+<!-- Code HTML réalisé par Martin Laval 5ème3 en 2024 pour un exposé sur le métier de développeur-->
+<!-- Code HTML : -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title id="titre">Le métier de développeur</title>
+	<meta charset="uft-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/png" href="data/favicons/favicon.png">
+	<!--Dans ce script, on code le changement de titre toute les trois secondes-et-demi.-->
+	<script>
+		let blabla="Le métier de développeur"
+		
+		const timer = () => {
+		document.getElementById("titre").innerHTML = blabla
+		if(blabla=="Le métier de développeur"){
+			blabla="&Eacutetudes&nbsp;courtes"
+		}
+		else{
+			blabla="Le métier de développeur"
+		}
+		}
+		
+		setInterval(timer, 3500)
+		</script>
+</head>
+	<body>
+		<nav class="brr">
+			<ul>
+				<li class="menu-html"><a href="html.html">Le métier</a>
+					<ul class="submenu">
+						<li><a href="dev_inf.html">Développeur informatique</a></li>
+					</ul>
+				</li>
+				<li class="menu-css"><a href="css.html">Les études</a>
+					<ul class="submenu">
+						<li><a href="avant_BAC.html">Avant le BAC</a></li>
+						<li><a>Études courtes</a></li>
+						<li><a href="Etudes_longues.html">Études longues</a></li>
+					</ul>
+				</li>
+				<li class="menu-javascript"><a href="JavaScript.html">Évolutions possibles</a>
+					<ul class="submenu">
+						<li><a href="trav_dom.html">Travailler dans dans tous les domaines</a></li>
+						<li><a href="cod.html">Apprendre de nouveaux languages de code</a></li>
+						<li><a class="tititoto" href="https://fr.wikipedia.org/wiki/Bill_Gates" target="_blank">devenir le plus riche du monde ;)</a></li>
+					</ul>
+				</li>
+				<li class="menu-contact"><a href="contact.html">Autre</a>
+					<ul class="submenu">
+						<li><a href="Plan_du_site.html">Plan du "site"</a></li>
+						<li><a href="ref.html">Références</a></li>
+						<li><a href="mon_projet_HTML.html">Accueil</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>        
+		<nav class="text">
+			<h1 class="tit "><span class="hover-3">Études courtes</span></h1>
+			<p class="explication">
+				<ol class="explication">
+					<li>Comment obtenir son <b class="surl" title="Brevet de Technicien Supérieur">BTS</b> ?</li>
+						<p>Couvrant tous les secteurs professionnels, les <b class="surl" title="Brevet de Technicien Supérieur">BTS</b>
+							 forment des collaborateurs d'ingénieur, des assistants commerciaux ou techniques, des assistants clientèle, des 
+							 chefs de chantier, etc. selon les secteurs. Le <b class="surl"><span title="Brevet de technicien Supérieur">BTS</span>
+							se prépare en 2 ans après le bac en lycée</b>, en école ou par l'apprentissage. Le recrutement se fait sur dossier.
+						  	<br>
+							<ul> Les différents types de <b class="surl" title="Brevet de Technicien Supérieur">BTS</b> pour devenir développeur :
+								<li>
+									<ul> BTS <b class="surl" title="Cybersécurité, Informatique et réseaux, Électronique et Logiciel">CIEL</b> :
+										<br>
+										<li class="color_blue">Option A : informatique et réseaux</li>
+										<li>Option B : éléctronique et réseaux</li>
+									</ul>
+								</li>
+								<li>
+									<ul> BTS <b class="surl" title="Services Informatiques aux Organisations">SIO</b> :
+										<br>
+										<li>Option A : <b class="surl" title="Solutions d'Infrastructure, Systèmes et Réseaux">SISR</b></li>
+										<li class="color_blue">Option B : <b class="surl" title="Solutions Logicielles et Applications Métiers">SLAM</b></li>
+									</ul>
+								</li>
+							</ul>
+						</p>
+					<li>Comment obtenir son <b class="surl" title="Bachelors Universitaires de Technologie">BUT</b> ?</li>
+						<p class="explication">
+						Diplôme national de l’enseignement supérieur, le <b class="surl" title="Bachelors Universitaires de Technologie">BUT</b>
+						 se prépare <span class="hover-2">3 ans après le bac</span> en <b class="surl" title="Institut Universitaire de Technologie">IUT</b>, à temps plein ou en apprentissage.
+							<br>
+						Cette formation générale et technologique alterne <b class="surl" title="Cours Magistraux">CM</b>, <b class="surl" title="Travaux Dirigés">TD</b> et <b class="surl" title="Travaux Pratiques">TP</b>.
+						<br>
+						 Le <b class="surl" title="Diplôme Universitaire de Technologie">DUT</b> peut être délivré à l’issue des deux premières années afin de faciliter les 
+						 passerelles vers d’autres formations.
+						 <br>
+						 Le <b class="surl" title="Bachelors Universitaires de Technologie">BUT</b> permet une insertion professionnelle ou une poursuite d’études vers <span class="hover-2">un bac + 5</span>.
+						 <br>
+						<ul>
+							<li>
+								<b class="surl" title="Bachelors Universitaires de Technologie">BUT</b> informatique : 
+								<ul>
+									<li><a href="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/but-informatique-parcours-administration-gestion-et-exploitation-des-donnees" class="link hover-4" target="_blank"><span title="Bachelors Universitaires de Technologie">BUT</span> informatique parcours administration, gestion et exploitation des données</a></li>
+									<li><a href="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/but-informatique-parcours-deploiement-d-applications-communicantes-et-securisees" class="link hover-4" target="_blank"><span title="Bachelors Universitaires de Technologie">BUT</span> informatique parcours déploiement d'applications communicantes et ... sécurisées</a></li>
+									<li><a href="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/but-informatique-parcours-integration-d-applications-et-management-du-systeme-d-information" class="link hover-4" target="_blank"><span title="Bachelors Universitaires de Technologie">BUT</span> informatique parcours intégration d'applications et management du ... système d'information</a></li>
+									<li><a href="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/but-informatique-parcours-realisation-d-applications-conception-developpement-validation" class="link hover-4" target="_blank"><span title="Bachelors Universitaires de Technologie">BUT</span> informatique parcours réalisation d'applications : conception, ... développement, validation</a></li>
+								</ul>
+							</li>
+							<li>
+								<b class="surl" title="Bachelors Universitaires de Technologie">BUT</b> réseaux et télécommunications :
+								<ul>
+									<li><a href="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/but-reseaux-et-telecommunications-parcours-internet-des-objets-et-mobilite" class="link hover-4" target="_blank"><span title="Bachelors Universitaires de Technologie">BUT</span> réseaux et télécommunications parcours internet des objets et mobilité ... (R&T (IOM))</a></li>
+								</ul>
+							</li>
+						</ul>
+						</p>
+				</ol>
+			</p>
+		</nav>
+	</body>
+</html>

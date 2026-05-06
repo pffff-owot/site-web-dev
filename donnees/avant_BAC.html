@@ -1,0 +1,81 @@
+<!-- Code HTML réalisé par Martin Laval 5ème3 en 2024 pour un exposé sur le métier de développeur-->
+<!-- Code HTML : -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title id="titre">Le métier de développeur</title>
+	<meta charset="uft-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/png" href="data/favicons/favicon.png">
+	<!--Dans ce script, on code le changement de titre toute les trois secondes-et-demi.-->
+	<script>
+		let blabla="Le métier de développeur"
+		
+		const timer = () => {
+		document.getElementById("titre").innerHTML = blabla
+		if(blabla=="Le métier de développeur"){
+			blabla="Avant&nbsp;le&nbsp;BAC"
+		}
+		else{
+			blabla="Le métier de développeur"
+		}
+		}
+		
+		setInterval(timer, 3500)
+	</script>
+</head>
+	<body>
+		<nav class="brr">
+			<ul>
+				<li class="menu-html"><a href="html.html">Le métier</a>
+					<ul class="submenu">
+						<li><a href="dev_inf.html">Développeur informatique</a></li>
+					</ul>
+				</li>
+				<li class="menu-css"><a href="css.html">Les études</a>
+					<ul class="submenu">
+						<li><a>Avant le BAC</a></li>
+						<li><a href="Etudes_courtes.html">Études courtes</a></li>
+						<li><a href="Etudes_longues.html">Études longues</a></li>
+					</ul>
+				</li>
+				<li class="menu-javascript"><a href="JavaScript.html">Évolutions possibles</a>
+					<ul class="submenu">
+						<li><a href="trav_dom.html">Travailler dans dans tous les domaines</a></li>
+						<li><a href="cod.html">Apprendres de nouveaux languages de code</a></li>
+						<li><a class="tititoto" href="https://fr.wikipedia.org/wiki/Bill_Gates" target="_blank">devenir le plus riche du monde ;)</a></li>
+					</ul>
+				</li>
+				<li class="menu-contact"><a href="contact.html">Autre</a>
+					<ul class="submenu">
+						<li><a href="Plan_du_site.html">Plan du "site"</a></li>
+						<li><a href="ref.html">Références</a></li>
+						<li><a href="mon_projet_HTML.html">Accueil</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>        
+		<nav class="text">
+			<h1 class="tit"><span class="hover-3">Avant le BAC</span></h1>
+			<img src="data/salle_info.jpg">
+			<p class="explication">
+				<ol class="explication">
+					<li>BAC professionel <b class="surl" title="Cybersécurité, Informatique et réseaux, Électronique">CIEL</b> :</li>
+						<ul>Il est accessible après <b class="surl">3 années de formation</b>. Il se prépare <b class="surl">après la classe de 3e</b>. On notera qu’un tiers du volume d’heures d’enseignement est consacré aux matières professionnelles.<br>
+							Le baccalauréat <b class="surl" title="Cybersécurité, Informatique et réseaux, Électronique">CIEL</b> développe des activités dans les secteurs suivants :
+							<li>La cybersécurité</li>
+							<li>Mise en oeuvre de réseaux informatiques</li>
+							<li>Réalisation et maintenance de produits électroniques</li>
+							<li>Valorisation de la donnée</li>
+						</ul>
+					<li>BAC technologique :</li>
+						<b class="surl">Après la seconde</b>, l'enseignement spécifique <span class="hover-2">"systèmes d'information et numérique"</span> de la terminale <b class="hover-4"> <a class="link" href="https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-sti2d-sciences-et-technologies-de-l-industrie-et-du-developpement-durable-enseignement-specifique-systemes-d-information-et-numerique" style="color: #000000" target="_blank">STI2D</a></b> est accessible après les spécialités <span class="hover-2">"innovation technologique"</span>, <span class="hover-2">"ingénierie et développement durable (I2D)"</span> de première <b class="hover-4"><a class="link" href="https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-sti2d-sciences-et-technologies-de-l-industrie-et-du-developpement-durable-enseignement-specifique-systemes-d-information-et-numerique" style="color: #000000" target="_blank">STI2D</a></b>.
+					<li>BAC général :</li>
+						Pour devenir développeur, on choisira la spécialté <span class="surl">Numérique</span>.
+						<span class="hover-2"><br>Nombre d'heures d'enseignement par semaine : </span><br><span class="surl"><b>4</b> heures</span> en <span class="surl"><b>première</b></span> et <span class="surl"><b>6</b> heures</span> en <span class="surl"><b>terminale</b></span>.<br>
+						<!--vidéo--><iframe width="753" height="423" src="https://www.youtube.com/embed/T1vZciVh4Ks" title="Choisir la spécialité Numérique et sciences informatiques (NSI) au baccalauréat" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</ol>
+			</p>
+		</nav>
+	</body>
+</html>

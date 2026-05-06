@@ -1,0 +1,78 @@
+<!-- Code HTML réalisé par Martin Laval 5ème3 en 2024 pour un exposé sur le métier de développeur-->
+<!-- Code HTML : -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title id=titre>Le métier de développeur</title>
+	<meta charset="uft-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/png" href="data/favicons/favicon.png">
+	<!--Dans ce script, on code le changement de titre toute les trois secondes-et-demi.-->
+	<script>
+		let blabla="Le métier de développeur"
+		
+		const timer = () => {
+		document.getElementById("titre").innerHTML = blabla
+		if(blabla=="Le métier de développeur"){
+			blabla="Références"
+		}
+		else{
+			blabla="Le métier de développeur"
+		}
+		}
+		
+		setInterval(timer, 3500)
+		</script>
+</head>
+	<body>
+		<nav class="brr">
+			<ul>
+				<li class="menu-html"><a href="html.html">Le métier</a>
+					<ul class="submenu">
+						<li><a href="dev_inf.html">Développeur informatique</a></li>
+					</ul>
+				</li>
+				<li class="menu-css"><a href="css.html">Les études</a>
+					<ul class="submenu">
+						<li><a href="avant_BAC.html">Avant le BAC</a></li>
+						<li><a href="Etudes_courtes.html">Études courtes</a></li>
+						<li><a href="Etudes_longues.html">Études longues</a></li>
+					</ul>
+				</li>
+				<li class="menu-javascript"><a href="JavaScript.html">Évolutions possibles</a>
+					<ul class="submenu">
+						<li><a href="trav_dom.html">Travailler dans dans tous les domaines</a></li>
+						<li><a href="cod.html">Apprendre de nouveaux languages de code</a></li>
+						<li><a class="tititoto" href="https://fr.wikipedia.org/wiki/Bill_Gates" target="_blank">devenir le plus riche du monde ;)</a></li>
+					</ul>
+				</li>
+				<li class="menu-contact"><a href="contact.html">Autre</a>
+					<ul class="submenu">
+						<li><a href="Plan_du_site.html">Plan du "site"</a></li>
+						<li><a>Références</a></li>
+						<li><a href="mon_projet_HTML.html">Accueil</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>        
+		<nav class="text">
+			<ul>
+				<h1 class="tit"><span class="hover-3">Références</span></h1>
+				<font size="6" color="grey" face="Terminal,Calibri"><a target="_blank"  class="link hover-4" href="https://www.onisep.fr/">-onisep</a></font>
+				<br><br><br>
+				<font size="6" color="grey" face="Terminal,Calibri"><a target="_blank" class="link hover-4" href="https://www.youtube.com/">-YouTube</a></font>
+				<br><br><br>
+				<font size="6" color="grey" face="Terminal,Calibri"><a target="_blank" class="link hover-4" href="https://www.ac-paris.fr/">-Académie de Paris</a></font>
+				<br><br><br>
+				<font size="6" color="grey" face="Terminal,Calibri"><a target="_blank" class="link hover-4" href="https://www.education.gouv.fr/">-Ministère de l'éducation nationale et  de la jeunesse</a></font>
+				<br><br><br>
+				<font size="6" color="grey" face="Terminal,Calibri"><a target="_blank" class="link hover-4" href="https://oniseptv.onisep.fr/video/developpeur-devops">-onisepTV</a></font>
+				<br><br><br>
+				<font size="6" color="grey" face="Terminal,Calibri"><a target="_blank" class="link hover-4" href="https://www.commentcoder.com/types-programmation/">-www.commentcoder.com/types-programmation</a></font>
+				<br><br><br>
+				<font size="6" color="grey" face="Terminal,Calibri"><a target="_blank" class="link hover-4" href="https://blog.hubspot.fr/website/langage-de-programmation">-https://blog.hubspot.fr/website/langage-de-programmation</a></font>
+				<br><br><br>
+			</ul>
+		</nav>
+	</body>
+</html>

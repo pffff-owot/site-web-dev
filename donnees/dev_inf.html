@@ -1,0 +1,72 @@
+<!-- Code HTML réalisé par Martin Laval 5ème3 en 2024 pour un exposé sur le métier de développeur-->
+<!-- Code HTML : -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title id="titre">Le métier de développeur</title>
+	<meta charset="uft-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/png" href="data/favicons/favicon.png">
+	<!--Dans ce script, on code le changement de titre toute les trois secondes-et-demi.-->
+	<script>
+		let blabla="Le métier de développeur"
+		
+		const timer = () => {
+		document.getElementById("titre").innerHTML = blabla
+		if(blabla=="Le métier de développeur"){
+			blabla="développeur informatique"
+		}
+		else{
+			blabla="Le métier de développeur"
+		}
+		}
+		
+		setInterval(timer, 3500)
+		</script>
+</head>
+	<body>
+		<nav class="brr">
+			<ul>
+				<li class="menu-html"><a href="html.html">Le métier</a>
+					<ul class="submenu">
+						<li><a>Développeur informatique</a></li>
+					</ul>
+				</li>
+				<li class="menu-css"><a href="css.html">Les études</a>
+					<ul class="submenu">
+						<li><a href="avant_BAC.html">Avant le BAC</a></li>
+						<li><a href="Etudes_courtes.html">Études courtes</a></li>
+						<li><a href="Etudes_longues.html">Études longues</a></li>
+					</ul>
+				</li>
+				<li class="menu-javascript"><a href="JavaScript.html">Évolutions possibles</a>
+					<ul class="submenu">
+						<li><a href="trav_dom.html">Travailler dans dans tous les domaines</a></li>
+						<li><a href="cod.html">Apprendre de nouveaux languages de code</a></li>
+						<li><a class="tititoto" href="https://fr.wikipedia.org/wiki/Bill_Gates" target="_blank">devenir le plus riche du monde 😉</a></li>
+					</ul>
+				</li>
+				<li class="menu-contact"><a href="contact.html">Autre</a>
+					<ul class="submenu">
+						<li><a href="Plan_du_site.html">Plan du "site"</a></li>
+						<li><a href="ref.html">Références</a></li>
+						<li><a href="mon_projet_HTML.html">Accueil</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>        
+		<nav class="text">
+			<h1 class="tit"><span class="hover-3">Développeur informatique</span></h1>
+			<!-- Insertion de la vidéo grace au code de Onisp_Tv : -->
+			<div class="video-playlist-item-current-src">
+				<div class="iframe-responsive-wrapper oniseptv player video link" data-image="https://videos.onisep.fr/images/w:280/media:slug:developpeur-devops/thumbnail.jpg" data-allowfullscreen="1" data-title="Vidéo : Développeur DevOps" data-id="videodeveloppeur-devops" data-src="https://videos.onisep.fr/embed/media:slug:developpeur-devops" data-width="1024" data-height="576"><iframe allowfullscreen="1" src="https://videos.onisep.fr/embed/media:slug:developpeur-devops" title="Vidéo : Développeur DevOps" width="1024" height="576" class="null" allow="null" frameborder="0" scrolling="no"></iframe></div>
+				<p class="explication">
+					Le <b class="surl">développeur informatique</b> doit bien connaître les clients pour lesquels il travaille et 
+					prendre leurs remarques en considération. <u class="surl">Rigoureux et méthodique</u>, il manifeste des qualités de concentration et d'imagination 
+					pour adapter au mieux ses programmes... Enfin, il sait <u class="surl">concevoir des documentations claires</u> pour les utilisateurs et sait 
+					travailler sous pression.Le salaire débutant est de 2800 €.
+				</p>
+			</div>
+		</nav>
+	</body>
+</html>

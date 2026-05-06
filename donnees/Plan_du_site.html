@@ -1,0 +1,61 @@
+<!-- Code HTML réalisé par Martin Laval 5ème3 en 2024 pour un exposé sur le métier de développeur-->
+<!-- Code HTML : -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title id="titre">Le métier de développeur</title>
+	<meta charset="uft-8">
+	<link rel="shortcut icon" type="image/png" href="data/favicons/favicon.png">
+	<!--Dans ce script, on code le changement de titre toute les trois secondes-et-demi.-->
+	<script>
+		let blabla="Le métier de développeur"
+		
+		const timer = () => {
+		document.getElementById("titre").innerHTML = blabla
+		if(blabla=="Le métier de développeur"){
+			blabla="Plan&nbsp;du&nbsp;site"
+		}
+		else{
+			blabla="Le métier de développeur"
+		}
+		}
+		
+		setInterval(timer, 3500)
+		</script>
+</head>
+	<body>
+        <nav class="text">
+			<h1 class="tit"><span class="hover-3"> Plan du site :</span></h1>
+        </nav>
+		<nav class="brr">
+			<ul>
+				<li class="menu-html"><a href="html.html" class="link hover-4">Le métier</a>
+					<ul class="submenu">
+						<li><a href="dev_inf.html" class="link hover-4">Développeur informatique</a></li>
+					</ul>
+				</li>
+				<li class="menu-css"><a href="css.html" class="link hover-4">Les études</a>
+					<ul class="submenu">
+						<li><a href="avant_BAC.html" class="link hover-4">Avant le BAC</a></li>
+						<li><a href="Etudes_courtes.html" class="link hover-4">Études courtes</a></li>
+						<li><a href="Etudes_longues.html" class="link hover-4">Études longues</a></li>
+					</ul>
+				</li>
+				<li class="menu-javascript"><a href="JavaScript.html" class="link hover-4">Évolutions possibles</a>
+					<ul class="submenu">
+						<li><a href="trav_dom.html" class="link hover-4">Travailler dans dans tous les domaines</a></li>
+						<li><a href="cod.html" class="link hover-4">Apprendre de nouveaux languages de code</a></li>
+						<li><a href="https://fr.wikipedia.org/wiki/Bill_Gates" target="_blank" class="link hover-4">devenir le plus riche du monde ;)</a></li>
+					</ul>
+				</li>
+				<li class="menu-contact"><a href="contact.html" class="link hover-4">Autre (	&Agrave; propos )</a>
+					<ul class="submenu">
+						<li><a href="" class="link hover-4">Plan du "site"</a></li>
+						<li><a href="ref.html" class="link hover-4">Références</a></li>
+						<li><a href="mon_projet_HTML.html" class="link hover-4">Accueil</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</body>
+</html>

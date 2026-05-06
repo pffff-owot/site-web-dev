@@ -1,0 +1,78 @@
+<!-- Code HTML réalisé par Martin Laval 5ème3 en 2024 pour un exposé sur le métier de développeur-->
+<!-- Code HTML : -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title id="titre">Le métier de développeur</title>
+	<meta charset="uft-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/png" href="data/favicons/favicon.png">
+	<!--Dans ce script, on code le changement de titre toute les trois secondes-et-demi.-->
+	<script>
+		let blabla="Le métier de développeur"
+		
+		const timer = () => {
+		document.getElementById("titre").innerHTML = blabla
+		if(blabla=="Le métier de développeur"){
+			blabla="&Eacute;tudes&nbsp;longues"
+		}
+		else{
+			blabla="Le métier de développeur"
+		}
+		}
+		
+		setInterval(timer, 3500)
+		</script>
+</head>
+	<body>
+		<nav class="brr">
+			<ul>
+				<li class="menu-html"><a href="html.html">Le métier</a>
+					<ul class="submenu">
+						<li><a href="dev_inf.html">Développeur informatique</a></li>
+					</ul>
+				</li>
+				<li class="menu-css"><a href="css.html">Les études</a>
+					<ul class="submenu">
+						<li><a href="avant_BAC.html">Avant le BAC</a></li>
+						<li><a href="Etudes_courtes.html">Études courtes</a></li>
+						<li><a>Études longues</a></li>
+					</ul>
+				</li>
+				<li class="menu-javascript"><a href="JavaScript.html">Évolutions possibles</a>
+					<ul class="submenu">
+						<li><a href="trav_dom.html">Travailler dans dans tous les domaines</a></li>
+						<li><a href="cod.html">Apprendre de nouveaux languages de code</a></li>
+						<li><a class="tititoto" href="https://fr.wikipedia.org/wiki/Bill_Gates" target="_blank">devenir le plus riche du monde ;)</a></li>
+					</ul>
+				</li>
+				<li class="menu-contact"><a href="contact.html">Autre</a>
+					<ul class="submenu">
+						<li><a href="Plan_du_site.html">Plan du "site"</a></li>
+						<li><a href="ref.html">Références</a></li>
+						<li><a href="mon_projet_HTML.html">Accueil</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>        
+		<nav class="text">
+			<h1 class="tit"><span class="hover-3">Études longues</span></h1>
+			<p class="explication"><b class="surl">Diplôme d'ingénieur</b> : Les diplômes d'ingénieurs, de niveau <b class="hover-2">bac + 5</b> avec le grade de master, sont délivrés par 
+			les écoles d'ingénieurs dont le titre est reconnu par la <b class="hover-2" title="Commission des Titres d'Ingénieur">CTI</b>. Selon les écoles, 
+			plusieurs voies d'entrée : après le bac, après une classe préparatoire scientifique, après <a href="Etudes_courtes.html" class="link hover-4" 
+			title="lien vers la page &quot; &Eacute;tudes courtes.&quot;">un <b title="diplôme universitaire de technologie">DUT</b> ou un <b title="Brevet de Technicien Supérieur">BTS</b></a>. 
+			De nombreuses écoles d'ingénieurs ont des spécialisations en développement, en informatique, ou en réseaux
+			<br><br>
+			<b class="surl">Masters</b> : Diplôme national de <span class="hover-2">niveau bac + 5</span>, le <span class="surl">master</span> 
+			se prépare en <span class="hover-2">4 semestres</span> après une licence <span class="hover-2">(bac + 3)</span> du même domaine. 
+			L'entrée en master est <span class="hover-2">sélective</span>. Le diplôme national de master est un diplôme <span class="surl">d'insertion professionnelle</span>. Il permet aussi de 
+			poursuivre des études en doctorat <span class="hover-2">(bac + 8)</span>.
+			<br><br>
+			<ul class="explication">
+				<li><a href="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/master-mention-informatique" class="link hover-4">Master mention informatique</a></li>
+				<li><a href="https://www.onisep.fr/ressources/univers-postbac/postbac/ile-de-france/paris/ufr-informatique-universite-paris-cite/master-mention-informatique-fondamentale-et-appliquee" class="link hover-4">Master mention informatique fondamentale et appliquée</a></li>
+			</ul>
+			</p>
+		</nav>
+	</body>
+</html>

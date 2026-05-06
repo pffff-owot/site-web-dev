@@ -1,0 +1,426 @@
+  /* Code CSS réalisé par Martin Laval 5ème3 en 2024 pour un exposé sur le métier de développeur
+  Code CSS : 
+  La classe "brr" = menu / liste des liens sur la page 'plan du "site" '.*/
+.busy{
+  cursor: url("cur/Jeuxducurseur/busy.cur")
+  }
+html{
+  cursor: url("cur/def.cur"), default;
+}
+body{
+  font-family: Ink Free,Comic sans MS;
+  margin: 0px;
+  padding: 0px;
+}
+
+.brr{
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  background-color: #424558;
+  z-index: 1;
+}
+
+.brr > ul {
+  position: sticky;
+  top: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.brr > ul::after{
+  position: sticky;
+  top: 0px;
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.brr > ul > li{
+  position: sticky;
+  top: 0px;
+  float: left;
+  position: relative;
+  cursor: url("cur/link.cur"),pointer;
+}
+
+.brr > ul > li > a{
+  position: sticky;
+  top: 0px;
+  padding: 20px 30px;
+  color: #FFF;
+  cursor: url("cur/link.cur"),pointer;
+}
+
+.brr > ul > li:hover a{
+  position: sticky;
+  top: 0px;
+  padding: 15px 30px 20px 30px;
+  cursor: url("cur/link.cur"),pointer;
+}
+
+.brr li{
+  position: sticky;
+  top: 0px;
+  list-style-type: none;
+}
+
+.submenu{
+  display: none;
+}
+
+.brr a{
+  position: sticky;
+  top: 0px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.brr li:hover .submenu{
+  position: sticky;
+  top: 0px;
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  padding: 0px;
+  z-index: 1000;
+}
+
+.submenu li{
+  border-bottom: 1px solid #CCC;
+}
+
+.submenu li a{
+  padding: 15px 30px;
+  font-size: 13px;
+  color: #222538;
+  width: 270px;
+}
+
+.menu-html:hover{
+  border-top: 5px solid #E44D26;
+  background-color: rgba(228, 77, 38, 0.15);
+}
+.menu-css:hover{
+  border-top: 5px solid #0070BB;
+  background-color: rgba(000, 112, 192, 0.15);
+  }
+.menu-javascript:hover{
+  border-top: 5px solid #F1DC4F;
+  background-color: rgba(241, 211, 79, 0.15);
+}
+.menu-contact:hover{
+  border-top: 5px solid #00FF00;
+  background-color: rgba(0, 225, 0, 0.15);
+}
+.menu-jeux:hover{
+  border-top: 5px solid #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.15)
+}
+.menu-html .submenu{
+    background-color: rgb(230, 100, 40);
+}
+.menu-css .submenu{
+    background-color: rgb(000, 160, 240);
+}
+.menu-javascript .submenu{
+    background-color: rgb(250, 215, 100);
+}
+.menu-contact .submenu{
+    background-color: rgb(0, 160, 0);
+}
+.menu-jeux .submenu{
+    background-color: rgb(228, 255, 184);
+}
+.submenu li:hover a{
+    color: #EEE;
+    font-weight: bold;
+}
+.menu-html .submenu li:hover{
+    background-color: rgb(210, 77, 60);
+}
+.menu-css .submenu li:hover{
+    background-color: rgb(000, 115, 200);
+}
+.menu-contact .submenu li:hover{
+    background-color: #008000;
+}
+.menu-javascript .submenu li:hover{
+    background-color: rgb(200, 165, 75);
+}
+.menu-jeux .submenu li:hover{
+    background-color: rgba(66, 69, 88, 0.8);
+}
+::selection{
+    color: rgb(253, 135, 0);
+    background-color: rgba(255, 0, 0, 0.9);  
+}
+.tit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+    font-size: 25pt
+}
+.surl::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.surl:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.surl::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: rgba(255, 135, 0,1);
+  z-index: -1;
+  transition: transform .300s ease;
+}
+
+.surl {
+  position: relative;
+  /*font-size: 5rem;*/
+}
+
+@media (orientation: landscape) {
+  body {
+    grid-auto-flow: column;
+  }
+}
+.hover-1 {
+  --h: 1.2em;   /* the height */
+  
+  line-height: var(--h);
+  color: #0000;
+  text-shadow: 
+    0 calc(-1*var(--_t,0em)) #000, 
+    0 calc(var(--h) - var(--_t,0em)) #1095c1;
+  overflow: hidden;
+  transition: .3s;
+}
+.hover-1:hover {
+  --_t: var(--h);
+}
+
+.hover-2 {
+  --h: 20.4em;   /* the height */
+  
+  linea-height: var(--h);
+  color: #0000;
+  overflow: hidden;
+  text-shadow: 
+    0 var(--_t,var(--h)) #fff,
+    0 0 var(--_c,#000);
+  background: 
+    linear-gradient(#000 0 0) 
+    bottom/100% var(--_d, 0) no-repeat;
+  transition: 0.3s;
+}
+.hover-2:hover {
+  --_d: 100%;
+  --_t: 0;
+  --_c: #0000;
+}
+
+.hover-3 {
+  --c: #1095c1; /* the color  */
+  --h: 1.2em;   /* the height */
+  
+  line-height: var(--h);
+  background: 
+    linear-gradient(var(--c) 0 0) no-repeat 
+    calc(200% - var(--_p,0%)) 100%/200% var(--_p,.08em);
+  color: #0000;
+  overflow: hidden;
+  text-shadow: 
+    0 calc(-1*var(--_t,0em)) var(--c), 
+    0 calc(var(--h) - var(--_t,0em)) #fff;
+  transition: .3s var(--_s,0s), background-position .3s calc(.3s - var(--_s,0s));
+}
+.hover-3:hover {
+  --_t: var(--h);
+  --_p: 100%;
+  --_s: .3s
+}
+
+.hover-4 {
+  --h: 1.2em;   /* the height */
+  --c: #ff8700; /* the color */
+  
+  line-height: var(--h);
+  color: #000;
+  text-shadow: 
+    0 var(--_t,var(--h)) #fff,
+    0 0 var(--_c,#000);
+  box-shadow: 0 var(--_t,var(--h)) var(--c);
+  clip-path: inset(0 0 1px 0);
+  background: 
+    linear-gradient(var(--c) 0 0) 0 var(--_t,var(--h)) no-repeat;
+  transition: 0.4s ,clip-path 0.4s 0.4s;
+}
+.hover-4:hover {
+  --_t: 0;
+  --_c: #0000;
+  clip-path: inset(0 0 calc(-1*var(--h)) 0);
+  transition: 0.4s 0.4s, clip-path 0.4s;
+}
+
+.hover-3 {
+  /* the color  */
+  --c: #1095c1;
+  /* the height */
+  --h: 1.2em;
+
+  /* The first hover effect in this article */
+  line-height: var(--h);  
+  color: #0000;
+  overflow: hidden;
+  text-shadow: 
+    0 calc(-1 * var(--_t, 0em)) var(--c), 
+    0 calc(var(--h) - var(--_t, 0em)) #fff;
+  /* The second hover effect from the previous article */
+  background: 
+    linear-gradient(var(--c) 0 0) no-repeat 
+    calc(200% - var(--_p, 0%)) 100% / 200% var(--_p, .08em);
+  transition: .3s var(--_s, 0s), background-position .3s calc(.3s - var(--_s, 0s));
+}
+.hover-3:hover {
+  --_t: var(--h);
+  --_p: 100%;
+  --_s: .3s
+}
+.text{
+    margin: 10px;
+}
+.tititoto{
+    background-color: rgba(189, 159, 0, 1);
+}
+.link{
+    cursor: url("cur/link.cur"), pointer;
+}
+.explication{
+    cursor: url("cur/aide.cur"), help;
+    font-size: 24pt;
+    font-family: comic sans MS, calibri, arial
+}
+.cura{
+  cursor: progress;
+}
+.curz{
+    cursor: wait;
+}
+.curr{
+    cursor: none;
+}
+.curpan{
+  cursor: vertical-text;
+}
+
+.arrow-down{
+  width:60px;
+  height:40px;
+  margin:0 0 0 -30px;
+  position:absolute;
+  left:50%;
+  bottom:0px;
+  -webkit-animation: arrow 0.5s 1s infinite ease-out alternate;
+  
+}
+
+.arrow-down:hover{
+  -webkit-animation-play-state: paused;
+}
+
+.left{
+  position:absolute;
+  height:10px;
+  width:40px;
+  background:black;
+  -webkit-transform:rotate(240deg);
+  top:10px;
+  left:10px;
+  -webkit-border-radius:4px;
+  -webkit-transform-origin:5px 50%;
+  -webkit-animation: leftArrow 0.5s 1s infinite ease-out alternate;
+}
+
+.right{
+  position:absolute;
+  height:10px;
+  width:40px;
+  background:black;
+  -webkit-transform:rotate(-60deg);
+  top:10px;
+  left:10px;
+  -webkit-border-radius:4px;
+  -webkit-transform-origin:5px 50%;
+  -webkit-animation: rightArrow 0.5s 1s infinite ease-out alternate;
+}
+
+
+
+
+@-webkit-keyframes arrow{
+  0% {
+    bottom:0px;
+  }
+  100%{
+    bottom:40px;
+  }
+}
+
+
+@-webkit-keyframes leftArrow{
+  0% {
+  }
+  100%{
+    -webkit-transform:rotate(225deg);
+  }
+}
+
+@-webkit-keyframes rightArrow{
+  0% {
+  }
+  100%{
+    -webkit-transform:rotate(-45deg);
+  }
+}
+
+.color_blue{
+  color: rgb(16, 149, 193)
+}
+.pas_dispo{
+  cursor: url("cur/nndis.cur"), not-allowed;
+}
+
+::-webkit-scrollbar{
+  width: 1em;
+}
+
+::-webkit-scrollbar-track{
+  background: #424558
+  /*border-radius: 100vw;
+margin-block: 2px;*/
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(red, yellow, green, blue);
+  border: .25em solid hsl(0, 0%, 0%);
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(blue, green, yellow, red);
+}
+
+.explication-2{
+    font-size: 24pt;
+    font-family: comic sans MS, calibri, arial
+}

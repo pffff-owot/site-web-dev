@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head id="head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="titre">Page cachée : "jeux"</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data/favicons/gif-manette.gif "type="image/gif">
+    <script src="Jeux.js"></script>
+</head>
+<body id="body">
+    <nav class="brr">
+        <ul>
+            <li class="menu-html"><a href="html.html">Le métier</a>
+                <ul class="submenu">
+                    <li><a href="dev_inf.html">Développeur informatique</a></li>
+                </ul>
+            </li>
+            <li class="menu-css"><a href="css.html">Les études</a>
+                <ul class="submenu">
+                    <li><a href="avant_BAC.html">Avant le BAC</a></li>
+                    <li><a href="Etudes_courtes.html">Études courtes</a></li>
+                    <li><a href="Etudes_longues.html">Études longues</a></li>
+                </ul>
+            </li>
+            <li class="menu-javascript"><a href="JavaScript.html">Évolutions possibles</a>
+                <ul class="submenu">
+                    <li><a href="trav_dom.html">Travailler dans dans tous les domaines</a></li>
+                    <li><a href="cod.html">Apprendre de nouveaux languages de code</a></li>
+                    <li><a class="tititoto" href="https://fr.wikipedia.org/wiki/Bill_Gates" target="_blank">devenir le plus riche du monde ;)</a></li>
+                </ul>
+            </li>
+            <li class="menu-contact"><a href="contact.html">Autre</a>
+                <ul class="submenu">
+                    <li><a href="Plan_du_site.html">Plan du "site"</a></li>
+                    <li><a href="ref.html">Références</a></li>
+                    <li><a href="mon_projet_HTML.html">Accueil</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <nav class="explication-2">
+        <a class="link tit hover-4" onclick="ModifierLeTitre()" title="Modifier le titre de la page.">Modifier le titre de la page</a>
+        <a class="link tit hover-4" onclick="RLT()" title="Rétablir le titre" id="RTLT"></a>
+        <br>
+        <a class="link tit hover-4" href="Jeux/Mot_de_passe.html" target="_blank">Cr&eacute;er&nbsp;un&nbsp;mot&nbsp;de&nbsp;passe&nbsp;robuste</a>
+        <br>
+        <a class="link tit hover-4" onclick="the_new()" ondblclick="the_new()" oncontextmenu="the_new()" title="Affiche les nouveautés de la page jeux.html.">Nouvautés</a>
+        <br>
+        <!--Ce span sert à obtenir le contenu complet de l'élément img et de pouvoir changer ses paramètres-->
+        <span id="param_img"><img src="data/Favicons/gif-manette.gif" onclick="changerlimage()" title="Appuies sur moi !"></span>
+        <br>
+        <h1 class="tit"><span class="hover-3">Jeux des curseurs :</span></h1><br>
+        <span class="busy" title="curseur : busy.cur">patienter</span>
+    </nav>
+   
+</body>
+</html>

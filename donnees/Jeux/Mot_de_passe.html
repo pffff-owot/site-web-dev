@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title id="titre">cr&eacute;er&nbsp;un&nbsp;mot&nbsp;de&nbsp;passe</title>
+    <link rel="shortcut icon" type="image/png" href="../data/Favicons/favicon_mdp.png"><!--CE FAVICON EST LE FAVICON DE HTTPS://WWW.MOTDEPASSE.XYZ MODIFIE PAR HTTPS://WWW.REMOVE.BG avec effet d'ombre au maximum.>-->
+    <script>let blabla="Jeux.html";const timer=() => {document.getElementById("titre").innerHTML = blabla;if(blabla=="Jeux.html"){blabla="cr&eacute;er&nbsp;un&nbsp;mot&nbsp;de&nbsp;passe"}else{blabla="Jeux.html"}};setInterval(timer, 3500)</script>
+    <link rel="stylesheet" href="../style.css">
+    <script>
+        function mdp(nb){
+        var url = 'https://api.motdepasse.xyz/create/?include_digits&include_lowercase&password_length=32&quantity=',nb;
+        var myRequest = new Request(url);
+        
+        fetch(myRequest).then((response) => response.json())
+                        .then(function(json_response){                    json_response.passwords.forEach(password => console.log(password));                 });}</script>
+</head>
+<body id="body">
+    <nav class="brr">
+        <ul>
+            <li class="menu-html"><a href="html.html">Le métier</a>
+                <ul class="submenu">
+                    <li><a href="dev_inf.html">Développeur informatique</a></li>
+                </ul>
+            </li>
+            <li class="menu-css"><a href="css.html">Les études</a>
+                <ul class="submenu">
+                    <li><a href="avant_BAC.html">Avant le BAC</a></li>
+                    <li><a href="Etudes_courtes.html">Études courtes</a></li>
+                    <li><a href="Etudes_longues.html">Études longues</a></li>
+                </ul>
+            </li>
+            <li class="menu-javascript"><a href="JavaScript.html">Évolutions possibles</a>
+                <ul class="submenu">
+                    <li><a href="trav_dom.html">Travailler dans dans tous les domaines</a></li>
+                    <li><a href="cod.html">Apprendre de nouveaux languages de code</a></li>
+                    <li><a class="tititoto" href="https://fr.wikipedia.org/wiki/Bill_Gates" target="_blank">devenir le plus riche du monde ;)</a></li>
+                </ul>
+            </li>
+            <li class="menu-contact"><a href="contact.html">Autre</a>
+                <ul class="submenu">
+                    <li><a href="Plan_du_site.html">Plan du "site"</a></li>
+                    <li><a href="ref.html">Références</a></li>
+                    <li><a href="mon_projet_HTML.html">Accueil</a></li>
+                </ul>
+            </li>
+            <li class="menu-jeux"><a href="../Jeux.html">Jeux.html</a>
+                <ul class="submenu">
+                    <li><a href="Jeux.html">Jeux</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <nav class="explication-2">
+        <button id="mdp" onclick="mdp()">creer</button>
+        <b>LA PAGE N'EST PAS ENCORE FONCTIONNELLE</b>
+        <textarea></textarea>
+    </nav>
+</body>
+</html>

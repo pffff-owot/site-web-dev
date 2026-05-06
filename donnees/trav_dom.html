@@ -1,0 +1,70 @@
+<!-- Code HTML réalisé par Martin Laval 5ème3 en 2024 pour un exposé sur le métier de développeur-->
+<!-- Code HTML : -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title id="titre">Le métier de développeur</title>
+	<meta charset="uft-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/png" href="data/favicons/favicon.png">
+	<!--Dans ce script, on code le changement de titre toute les trois secondes-et-demi.-->
+	<script src="modificateur_de_titre.js">
+		let blabla="Le métier de développeur"
+		
+		const timer = () => {
+		document.getElementById("titre").innerHTML = blabla
+		if(blabla=="Le métier de développeur"){
+			blabla="Travailler&nbsp;dans&nbsp;tous&nbsp;les&nbsp;domaines"
+		}
+		else{
+			blabla="Le métier de développeur"
+		}
+		}
+		
+		setInterval(timer, 3500)
+//		modifier_le_titre("Travailler&nbsp;dans&nbsp;tous&nbsp;les&nbsp;domaines")
+//		Ce script ne marche pas encore.
+		</script>
+<head>
+	<body>
+		<nav class="brr">
+			<ul>
+				<li class="menu-html"><a href="html.html">Le métier</a>
+					<ul class="submenu">
+						<li><a href="dev_inf.html">Développeur informatique</a></li>
+					</ul>
+				</li>
+				<li class="menu-css"><a href="css.html">Les études</a>
+					<ul class="submenu">
+						<li><a href="avant_BAC.html">Avant le BAC</a></li>
+						<li><a href="Etudes_courtes.html">Études courtes</a></li>
+						<li><a href="Etudes_longues.html">Études longues</a></li>
+					</ul>
+				</li>
+				<li class="menu-javascript"><a href="JavaScript.html">Évolutions possibles</a>
+					<ul class="submenu">
+						<li><a>Travailler dans dans tous les domaines</a></li>
+						<li><a href="cod.html">Apprendre de nouveaux languages de code</a></li>
+						<li><a class="tititoto" href="https://fr.wikipedia.org/wiki/Bill_Gates" target="_blank">devenir le plus riche du monde ;)</a></li>
+					</ul>
+				</li>
+				<li class="menu-contact"><a href="contact.html">Autre</a>
+					<ul class="submenu">
+						<li><a href="Plan_du_site.html">Plan du "site"</a></li>
+						<li><a href="ref.html">Références</a></li>
+						<li><a href="mon_projet_HTML.html">Accueil</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>        
+		<nav class="text">
+			<h1 class="tit"><span class="hover-3">Travailler dans tous les domaines</span></h1>
+			<!-- insertion de la video depuis YouTube-->
+			<iframe width="695" height="391" src="https://www.youtube.com/embed/S3J6B3XiuSo" title="Teaser Les métiers du numérique" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			<p class="explication">De nos jours, l'informatique est partout.
+			 En choisissant les métiers de l'informatique je pourrai travailler aussi bien dans la police scientifique que dans l'agriculture, 
+			 l'éducation nationale, les jeux vidéos ou...<br>
+			 <span class="surl">...<b>l'informatique</b></span></p>
+		</nav>
+	</body>
+</html>

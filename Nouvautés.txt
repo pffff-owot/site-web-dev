@@ -1,0 +1,8 @@
+==>Affichage permanent du menu (précédante version ne l'incluant pas)
+
+==>Amélioration de l'affichage permanent du menu.
+==>Titre "dynamique"
+==>Changemant de la couleur de surlignage.
+==>Modification de "jeux.js"
+==>Correction d'une faute d'ortographe "Acceuil"-->"Accueil".
+==>Correction de fautes de commentaire dans certains fichiers html.
